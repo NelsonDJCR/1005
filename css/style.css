@@ -966,11 +966,22 @@ button.mfp-arrow {
 }
 
 .sterk-team .info {
-    background-color: #fff;
-    text-align: center;
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+    /* text-align: center;
     padding: 30px 0;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
+}
+.sterk-team .info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(230, 60, 154, .6);
+    z-index: 1;
 }
 
 .sterk-team .info h5 {
